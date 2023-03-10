@@ -1,0 +1,281 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: roboto, sans-serif;
+}
+body {
+  background-color: #000;
+}
+.containerdesktop,
+.carddesktop span,
+strong, p {
+  color: #fff;
+}
+.containerdesktop,
+.carddesktop strong {
+  font-size: 1.2em;
+}
+.containerdesktop7000 {
+  padding: 150px;
+  margin: 0 auto;
+}
+.containermobileprocessador {
+  width: min(100% - 2rem, 1400px);
+  display: none;
+  margin-inline: auto;
+  margin: 0 auto;
+}
+.container-fluid {
+  width: 100%;
+}
+.containerdesktop {
+  margin: 0 auto;
+}
+.bannermobileprocessador {
+  display: none;
+}
+.bannerprocessador7000 {
+  display: block !important;
+}
+.textotexto1 {
+  margin: 0 20%;
+}
+.texto1-container {
+  margin-top: 100px;
+}
+.vitrineprocessador {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.carddesktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000;
+  padding: 1rem;
+}
+.scrolled.vai-sobe {
+  animation: vai-sobe 1s ease-in-out;
+  transition: opacity 800ms;
+}
+@keyframes vai-sobe {
+  0%,
+  100% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.js-scroll.scrolled {
+  opacity: 1;
+}
+.h1processador {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.carddesktop-info {
+  margin-top: 1rem;
+  padding-top: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000;
+  z-index: 2;
+}
+.carddesktop-image {
+  z-index: 1;
+}
+.carddesktop-image:hover {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(20deg);
+}
+.button-processador:hover {
+  cursor: pointer;
+}
+.banner-wrapper7000 {
+  background: url(https://www.hdstore.com.br/images/uploaded/Banner%20gameplay.png)
+    left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+  margin-top: 100px;
+}
+.banner-wrapper2 {
+  background: url(https://www.hdstore.com.br/images/uploaded/Designer%20working.png)
+    right center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+}
+.banner-wrapper3 {
+  background: url(https://www.hdstore.com.br/images/uploaded/Banner%20Amd%20ryzen.png)
+    left center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+}
+.banner-text-wrapper {
+  flex: 1;
+  max-width: 40%;
+  color: rgb(221 217 217);
+  font-size: 1.25em;
+  margin-top: 20px;
+  padding: 100px 50px 0 !important;
+  background: rgba(0, 0, 0, 0.3);
+}
+.banner-text-wrapper2 {
+  flex: 1;
+  max-width: 40%;
+  color: rgb(221 217 217);
+  font-size: 1.25em;
+  margin-top: 20px;
+  padding: 100px 50px 0 !important;
+  background: rgba(0, 0, 0, 0.3);
+  margin-left: auto;
+}
+.banner-wrapperprocessador {
+  margin-top: 4rem;
+  background-image: url(https://www.hdstore.com.br/images/uploaded/Banner_gameplay_mobile.png);
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+}
+.banner-wrapper2processador {
+  background-image: url(https://www.hdstore.com.br/images/uploaded/conteudoprocessadormobile.png);
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+}
+.banner-wrapper3processador {
+  background-image: url(https://www.hdstore.com.br/images/uploaded/Banner_Amd_ryzen_mobile.png);
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+}
+.button-processador {
+color: #fff;
+margin-top: 10px !important;
+border: 1px solid #fff;
+background: #000;
+border-radius: 46px;
+padding: 10px;
+}
+@media (max-width: 1200px) {
+  .banner-wrapper7000 {
+    background: url(https://www.hdstore.com.br/images/uploaded/Banner%20gameplay.png)
+      right center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+  }
+  .banner-wrapper2 {
+    background: url(https://www.hdstore.com.br/images/uploaded/Designer%20working.png)
+      center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+  }
+  .banner-wrapper3 {
+    background: url(https://www.hdstore.com.br/images/uploaded/Banner%20Amd%20ryzen.png)
+      center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+  }
+  .banner-text-wrapper {
+    flex: 1;
+    max-width: 100%;
+    color: rgb(221 217 217);
+    font-size: 1.25em;
+    margin-top: 20px;
+    padding: 40px !important;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .banner-text-wrapper2 {
+    flex: 1;
+    max-width: 100%;
+    color: rgb(221 217 217);
+    font-size: 1.25em;
+    margin-top: 20px;
+    padding: 40px !important;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+  }
+  .containerdesktop,
+  .carddesktop strong {
+    font-size: 2em;
+  }
+  .texto1-container {
+    margin-top: 20px;
+  }
+  .texto1-container h2 {
+    font-size: 1em;
+  }
+  .textotexto1 {
+    padding-top: 0 !important;
+    margin: 0 auto;
+  }
+  .containerdesktop7000 {
+    padding: 20px;
+    margin: 0 auto;
+  }
+  .bannermobileprocessador {
+    display: block !important;
+  }
+  .bannerprocessador7000 {
+    display: none !important;
+  }
+
+
+  .button-processador {
+color: #fff;
+margin-top: 10px !important;
+border: 1px solid #fff;
+background: #000;
+border-radius: 46px;
+padding: 10px;
+}
+
+  .carddesktop-image {
+    z-index: 1;
+    width: 100% !important;
+  }
+  .carddesktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    padding: 1rem;
+    width: 30% !important;
+  }
+}
