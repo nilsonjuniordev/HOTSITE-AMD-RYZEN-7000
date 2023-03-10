@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>r7</title>
+  </head>
+  <body>
+    <style>
+      @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap";
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: roboto, sans-serif;
+      }
+      body {
+        background-color: #000;
+      }
+      .containerdesktop,
+      .carddesktop span,
+      strong, p {
+        color: #fff;
+      }
+      .containerdesktop,
+      .carddesktop strong {
+        font-size: 1.2em;
+      }
+      .containerdesktop7000 {
+        padding: 150px;
+        margin: 0 auto;
+      }
+      .containermobileprocessador {
+        width: min(100% - 2rem, 1400px);
+        display: none;
+        margin-inline: auto;
+        margin: 0 auto;
+      }
+      .container-fluid {
+        width: 100%;
+      }
+      .containerdesktop {
+        margin: 0 auto;
+      }
+      .bannermobileprocessador {
+        display: none;
+      }
+      .bannerprocessador7000 {
+        display: block !important;
+      }
+      .textotexto1 {
+        margin: 0 20%;
+      }
+      .texto1-container {
+        margin-top: 100px;
+      }
+      .vitrineprocessador {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .carddesktop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #000;
+        padding: 1rem;
+      }
+      .scrolled.vai-sobe {
+        animation: vai-sobe 1s ease-in-out;
+        transition: opacity 800ms;
+      }
+      @keyframes vai-sobe {
+        0%,
+        100% {
+          transform: translateY(5%);
+        }
+        100% {
+          transform: translateY(0%);
+        }
+      }
+      .js-scroll {
+        opacity: 0;
+        transition: opacity 500ms;
+      }
+      .js-scroll.scrolled {
+        opacity: 1;
+      }
+      .h1processador {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      .carddesktop-info {
+        margin-top: 1rem;
+        padding-top: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #000;
+        z-index: 2;
+      }
+      .carddesktop-image {
+        z-index: 1;
+      }
+      .carddesktop-image:hover {
+        transition: all 0.5s ease-in-out;
+        transform: rotate(20deg);
+      }
+      .button-processador:hover {
+        cursor: pointer;
+      }
+      .banner-wrapper7000 {
+        background: url(https://www.hdstore.com.br/images/uploaded/Banner%20gameplay.png)
+          left center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 400px;
+        display: flex;
+        margin-top: 100px;
+      }
+      .banner-wrapper2 {
+        background: url(https://www.hdstore.com.br/images/uploaded/Designer%20working.png)
+          right center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 400px;
+        display: flex;
+      }
+      .banner-wrapper3 {
+        background: url(https://www.hdstore.com.br/images/uploaded/Banner%20Amd%20ryzen.png)
+          left center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 400px;
+        display: flex;
+      }
+      .banner-text-wrapper {
+        flex: 1;
+        max-width: 40%;
+        color: rgb(221 217 217);
+        font-size: 1.25em;
+        margin-top: 20px;
+        padding: 100px 50px 0 !important;
+        background: rgba(0, 0, 0, 0.3);
+      }
+      .banner-text-wrapper2 {
+        flex: 1;
+        max-width: 40%;
+        color: rgb(221 217 217);
+        font-size: 1.25em;
+        margin-top: 20px;
+        padding: 100px 50px 0 !important;
+        background: rgba(0, 0, 0, 0.3);
+        margin-left: auto;
+      }
+      .banner-wrapperprocessador {
+        margin-top: 4rem;
+        background-image: url(https://www.hdstore.com.br/images/uploaded/Banner_gameplay_mobile.png);
+        background-size: cover;
+        min-height: 400px;
+        display: flex;
+      }
+      .banner-wrapper2processador {
+        background-image: url(https://www.hdstore.com.br/images/uploaded/conteudoprocessadormobile.png);
+        background-size: cover;
+        min-height: 400px;
+        display: flex;
+      }
+      .banner-wrapper3processador {
+        background-image: url(https://www.hdstore.com.br/images/uploaded/Banner_Amd_ryzen_mobile.png);
+        background-size: cover;
+        min-height: 400px;
+        display: flex;
+      }
+      .button-processador {
+    color: #fff;
+    margin-top: 10px !important;
+    border: 1px solid #fff;
+    background: #000;
+    border-radius: 46px;
+    padding: 10px;
+}
+    @media (max-width: 1200px) {
+        .banner-wrapper7000 {
+          background: url(https://www.hdstore.com.br/images/uploaded/Banner%20gameplay.png)
+            right center no-repeat;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          min-height: 400px;
+          display: flex;
+        }
+        .banner-wrapper2 {
+          background: url(https://www.hdstore.com.br/images/uploaded/Designer%20working.png)
+            center center no-repeat;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          min-height: 400px;
+          display: flex;
+        }
+        .banner-wrapper3 {
+          background: url(https://www.hdstore.com.br/images/uploaded/Banner%20Amd%20ryzen.png)
+            center center no-repeat;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          min-height: 400px;
+          display: flex;
+        }
+        .banner-text-wrapper {
+          flex: 1;
+          max-width: 100%;
+          color: rgb(221 217 217);
+          font-size: 1.25em;
+          margin-top: 20px;
+          padding: 40px !important;
+          background: rgba(0, 0, 0, 0.5);
+        }
+        .banner-text-wrapper2 {
+          flex: 1;
+          max-width: 100%;
+          color: rgb(221 217 217);
+          font-size: 1.25em;
+          margin-top: 20px;
+          padding: 40px !important;
+          background: rgba(0, 0, 0, 0.5);
+          margin-left: auto;
+        }
+        .containerdesktop,
+        .carddesktop strong {
+          font-size: 2em;
+        }
+        .texto1-container {
+          margin-top: 20px;
+        }
+        .texto1-container h2 {
+          font-size: 1em;
+        }
+        .textotexto1 {
+          padding-top: 0 !important;
+          margin: 0 auto;
+        }
+        .containerdesktop7000 {
+          padding: 20px;
+          margin: 0 auto;
+        }
+        .bannermobileprocessador {
+          display: block !important;
+        }
+        .bannerprocessador7000 {
+          display: none !important;
+        }
+      
+
+        .button-processador {
+    color: #fff;
+    margin-top: 10px !important;
+    border: 1px solid #fff;
+    background: #000;
+    border-radius: 46px;
+    padding: 10px;
+}
+
+        .carddesktop-image {
+          z-index: 1;
+          width: 100% !important;
+        }
+        .carddesktop {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background: #000;
+          padding: 1rem;
+          width: 30% !important;
+        }
+      }
+    </style>
+
+    <div
+      class="bannerprocessador7000 scroll-element vai-sobe"
+      style="display: flex"
+    >
+      <a href="#sec">
+        <img
+          style="width: 100%"
+          src="https://www.hdstore.com.br/images/uploaded/LP-AMD%20Ryzen%207000%20(Desktop).jpeg"
+      /></a>
+    </div>
+    <div class="bannermobileprocessador scroll-element vai-sobe">
+      <a href="#sec">
+        <img
+          style="width: 100%"
+          src="https://www.hdstore.com.br/images/uploaded/AMD-Ryzen-7000-(Mobile).jpeg"
+      /></a>
+    </div>
+    <div id="sec" class="texto1-container">
+      <h2
+        class="textotexto1"
+        style="color: white; text-align: center; padding-top: 50px"
+      >
+        Obtenha uma vantagem competitiva com os processadores para desktop AMD
+        Ryzen™ Série 7000. Jogabilidade rápida e desempenho final para seus
+        movimentos vencedores do jogo.
+      </h2>
+    </div>
+    <div class="containerdesktop7000">
+      <div class="vitrineprocessador-wrapper">
+        <h1 class="h1processador" style="color: white">
+          Processadores da linha AMD Ryzen 7000
+        </h1>
+        <div class="vitrineprocessador">
+          <a href="https://www.hdstore.com.br/processador-amd-ryzen-5-7600x-47ghz-turbo-53ghz-32mb-cache-am5-100-100000593wof">
+            <div class="carddesktop scroll-element js-scroll vai-sobe"
+            data-animation=""
+          >
+            <img
+              class="carddesktop-image"
+              src="https://www.hdstore.com.br/images/uploaded/unknown.png"
+              alt=""
+            />
+       
+             <div class="carddesktop-info">
+              <strong>RYZEN 5 7600X</strong><p> 6 Cores | 12 threads | 4.7Ghz</p>
+              <button class="button-processador" type="button-processador">
+                  COMPRAR
+                </button>
+            </div>
+          </div></a>
+
+        <a href="https://www.hdstore.com.br/processador-amd-ryzen-7-7700x-45ghz-turbo-54ghz-32mb-cache-am5-100-100000591wof">
+          <div class="carddesktop scroll-element js-scroll vai-sobe">
+            <img
+              class="carddesktop-image"
+              src="https://www.hdstore.com.br/images/uploaded/unknown2.png"
+              alt=""
+            />
+            <div class="carddesktop-info">
+              <strong>RYZEN 7 7700X</strong><p> 8 Cores | 16 threads | 4.5Ghz</p>
+              <button class="button-processador" type="button-processador">
+                  COMPRAR
+                </button>
+            </div>
+          </div></a>
+
+         <a href="https://www.hdstore.com.br/processador-amd-ryzen-9-7900x-47ghz-turbo-56ghz-64mb-cache-am5-100-100000589wof">
+          <div class="carddesktop scroll-element js-scroll vai-sobe">
+            <img
+              class="carddesktop-image"
+              src="https://www.hdstore.com.br/images/uploaded/unknown3.png"
+              alt=""
+            />
+            <div class="carddesktop-info">
+              <strong>RYZEN 9 7900X</strong> <p>12 Cores | 24 threads | 4.7Ghz</p>
+             <button class="button-processador" type="button-processador">
+                  COMPRAR
+                </button>
+            </div>
+          </div></a>
+
+         <a href="https://www.hdstore.com.br/processador-amd-ryzen-9-7950x-45ghz-turbo-57ghz-64mb-cache-am5-100-100000514wof">
+          <div class="carddesktop scroll-element js-scroll vai-sobe">
+            <img
+              class="carddesktop-image"
+              src="https://www.hdstore.com.br/images/uploaded/unknown3.png"
+              alt=""
+            />
+            <div class="carddesktop-info">
+              <strong>RYZEN 9 7950X</strong> <p>16 Cores | 32 threads | 4.5Ghz</p>
+              <button class="button-processador" type="button-processador">
+                  COMPRAR
+                </button>
+            </div>
+          </div></a>
+          
+        </div>
+      </div>
+    </div>
+    <div class="containerdesktop">
+      <div class="banner-wrapper7000">
+        <div class="banner-text-wrapper scroll-element js-scroll vai-sobe">
+          <strong>Desempenho Campeão</strong>
+          <p>
+            Jogue com confiança. Os processadores de desktop AMD Ryzen™ Série
+            5000 oferecem desempenho incomparável com tecnologias de ponta,
+            incluindo Precision Boost 2 e Precision Boost Overdrive.2 Quer mais?
+            Obtenha gráficos máximos e largura de banda de armazenamento com
+            PCIe® 4.0.p
+          </p>
+        </div>
+      </div>
+      <div class="banner-wrapper2">
+        <div class="banner-text-wrapper2 scroll-element js-scroll vai-sobe">
+          <strong>Feito Para Criação</strong>
+          <p>
+            Esteja você renderizando em 3D uma cena com alto número de
+            polígonos, exportando arquivos de vídeo massivos ou visualizando um
+            sonho arquitetônico, os processadores AMD Ryzen™ Série 7000 são
+            construídos para vencer o relógio. Com conectividade que economiza
+            tempo, como suporte de armazenamento PCIe® 5.0, WiFi® 6E
+            ultrarrápido, tecnologia AMD EXPO™, até 32 threads de processamento
+            e aceleradores de vídeo dedicados3, eleve sua experiência com os
+            processadores AMD Ryzen Série 7000.
+          </p>
+        </div>
+      </div>
+      <div class="banner-wrapper3">
+        <div class="banner-text-wrapper scroll-element js-scroll vai-sobe">
+          <strong>Tudo em Um</strong>
+          <p>
+            Os novos processadores AMD Ryzen Série 7000 estão equipados com
+            tecnologias de ponta para um PC moderno descomplicado. Os destaques
+            incluem memória DDR5 de alta velocidade, suporte PCIe® 5.0,
+            overclocking de memória de um toque AMD EXPO™ e fabricação
+            hipereficiente de 5 nm. Coloque uma placa-mãe soquete AMD AM5 no
+            coração da sua configuração para dominar os jogos que você ama hoje
+            e amanhã. Se o seu PC precisa das melhores e mais recentes
+            capacidades, insista nos processadores AMD Ryzen™.
+          </p>
+        </div>
+      </div>
+    </div>
+    <p style="text-align: center; padding: 20px; color: white">
+      © 2022 HDStore
+    </p>
+
+    <script>
+      const scrollElements = document.querySelectorAll(".js-scroll");
+
+      const elementInView = (el, dividend = 1) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+          elementTop <=
+          (window.innerHeight || document.documentElement.clientHeight) /
+            dividend
+        );
+      };
+
+      const elementOutofView = (el) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+          elementTop >
+          (window.innerHeight || document.documentElement.clientHeight)
+        );
+      };
+
+      const displayScrollElement = (element) => {
+        element.classList.add("scrolled");
+      };
+
+      const hideScrollElement = (element) => {
+        element.classList.remove("scrolled");
+      };
+
+      const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+          if (elementInView(el, 1.25)) {
+            displayScrollElement(el);
+          } else if (elementOutofView(el)) {
+            hideScrollElement(el);
+          }
+        });
+      };
+
+      window.addEventListener("scroll", () => {
+        handleScrollAnimation();
+      });
+    </script>
+  </body>
+</html>
